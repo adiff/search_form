@@ -1,0 +1,8 @@
+Enter a new person:
+<hr>
+<%= form_for @person do |f| %>
+	FirstName: <%= f.text_field :firstname %><br />
+	LastName: <%= f.text_field :lastname %><br />
+	<%= f.submit %>
+<% end %>
+
