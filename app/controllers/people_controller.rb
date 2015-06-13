@@ -1,6 +1,6 @@
 class PeopleController < ApplicationController
         def index
-                @people = Person.find_by(firstname: params[:search]) if params[:search].present?
+		@people = Person.search(params[:search]) if params[:search].present?
         end
 
         def new

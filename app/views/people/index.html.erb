@@ -1,10 +1,17 @@
 <%= form_tag(people_index_path, method: "get") do %>
-  <%= label_tag(:search, "Search for:") %>
+  <%= label_tag(:search, "Search First-Name") %>
   <%= text_field_tag(:search) %>
   <%= submit_tag("Search") %>
 <% end %>
-<%= @people if @people.present? %>
 
 <br><br>
 
-<%= @people.firstname if @people.present? %> <%= @people.lastname if @people.present? %>
+
+<% if @people.present? %>
+<% @people.each do |p| %>
+  </br><%= p.firstname %> <%= p.lastname%>
+<% end %>
+<% else %>
+  <p>There are no people like "<%= params[:search] %>".</p>
+<% end %>
+
