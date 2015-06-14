@@ -1,11 +1,13 @@
+SEARCH FOR A PERSON:
+<hr>
 <%= form_tag(people_index_path, method: "get") do %>
-  <%= label_tag(:search, "Search First-Name") %>
+  <%= label_tag(:search, "Name: ") %>
   <%= text_field_tag(:search) %>
   <%= submit_tag("Search") %>
 <% end %>
 
-<br><br>
 
+<hr>
 
 <% if @people.present? %>
 <% @people.each do |p| %>

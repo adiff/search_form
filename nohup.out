@@ -1,0 +1,890 @@
+=> Booting WEBrick
+=> Rails 4.2.1 application starting in development on http://172.31.27.120:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2015-06-13 19:51:01] INFO  WEBrick 1.3.1
+[2015-06-13 19:51:01] INFO  ruby 2.2.2 (2015-04-13) [x86_64-linux]
+[2015-06-13 19:51:01] INFO  WEBrick::HTTPServer#start: pid=14717 port=3000
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=%22%3Cscript%3Ealert%3C%2Fscript%3E&commit=Search" for 77.101.65.123 at 2015-06-13 19:51:09 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"\"<script>alert</script>", "commit"=>"Search"}
+  [1m[35mPerson Load (0.1ms)[0m  SELECT "people".* FROM "people" WHERE (firstname LIKE '%"<script>alert</script>%')
+  Rendered people/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 134ms (Views: 117.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 77.101.65.123 at 2015-06-13 19:51:10 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 77.101.65.123 at 2015-06-13 19:51:10 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 77.101.65.123 at 2015-06-13 19:51:10 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 77.101.65.123 at 2015-06-13 19:51:10 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 77.101.65.123 at 2015-06-13 19:51:10 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 77.101.65.123 at 2015-06-13 19:51:10 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 77.101.65.123 at 2015-06-13 19:51:10 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 77.101.65.123 at 2015-06-13 19:51:13 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=ori&commit=Search" for 77.101.65.123 at 2015-06-13 19:51:21 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"ori", "commit"=>"Search"}
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" WHERE (firstname LIKE '%ori%')[0m
+  Rendered people/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=sa&commit=Search" for 77.101.65.123 at 2015-06-13 19:51:24 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sa", "commit"=>"Search"}
+  [1m[35mPerson Load (0.1ms)[0m  SELECT "people".* FROM "people" WHERE (firstname LIKE '%sa%')
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=aa&commit=Search" for 77.101.65.123 at 2015-06-13 19:51:27 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"aa", "commit"=>"Search"}
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" WHERE (firstname LIKE '%aa%')[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=t&commit=Search" for 77.101.65.123 at 2015-06-13 19:51:31 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"t", "commit"=>"Search"}
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE (firstname LIKE '%t%')
+  Rendered people/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=ag&commit=Search" for 77.101.65.123 at 2015-06-13 19:51:38 -0400
+Cannot render console from 77.101.65.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"ag", "commit"=>"Search"}
+  [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" WHERE (firstname LIKE '%ag%')[0m
+  Rendered people/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=nt&commit=Search" for 79.180.61.201 at 2015-06-13 19:51:39 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"nt", "commit"=>"Search"}
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE (firstname LIKE '%nt%')
+  Rendered people/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 19:51:39 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 19:51:39 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 19:51:39 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 19:51:39 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 19:51:39 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 19:51:39 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 19:51:39 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 19:51:45 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 19:51:45 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:25:19 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/people" for 79.180.61.201 at 2015-06-13 20:25:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IDmsFXGRg0HS4FYOlTM0kz+HyZznVYSb4DzdKZwx2s0syXlBx42YyA+akq885IY+ezJ/lMhbujNitKYyjEDzXQ==", "person"=>{"firstname"=>"adi", "lastname"=>""}, "commit"=>"Create Person"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "people" ("firstname", "lastname", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["firstname", "adi"], ["lastname", ""], ["created_at", "2015-06-14 00:25:22.706684"], ["updated_at", "2015-06-14 00:25:22.706684"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://52.10.115.72:3000/people/new
+Completed 302 Found in 8ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:25:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/people" for 79.180.61.201 at 2015-06-13 20:26:16 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eV2V830GjjInlpkIH6Sc9eM04QZW3psfuruZEa1f1E91rUCnyxqVu/rsXam2cy5Yp4FXDnnQpbc4M+IKvS793w==", "person"=>{"firstname"=>"seva feldman", "lastname"=>""}, "commit"=>"Create Person"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("firstname", "lastname", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["firstname", "seva feldman"], ["lastname", ""], ["created_at", "2015-06-14 00:26:16.589630"], ["updated_at", "2015-06-14 00:26:16.589630"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://52.10.115.72:3000/people/new
+Completed 302 Found in 6ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:26:16 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/people" for 79.180.61.201 at 2015-06-13 20:26:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rJSol0k27LyJA3lV/4CrosBUOuAXuZVp39LJiFldBHegZH3D/yr3NVR5vfRWVxkPhOGM6Di3q8FdWrKTSSwt5w==", "person"=>{"firstname"=>"Adi Fragman", "lastname"=>""}, "commit"=>"Create Person"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "people" ("firstname", "lastname", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["firstname", "Adi Fragman"], ["lastname", ""], ["created_at", "2015-06-14 00:26:22.294691"], ["updated_at", "2015-06-14 00:26:22.294691"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://52.10.115.72:3000/people/new
+Completed 302 Found in 7ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:26:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/people" for 79.180.61.201 at 2015-06-13 20:26:30 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QtEQVPMhjsQUwORzhswlU/9cd8ygPiCn4FOhJqui7wZOIcUART2VTcm6INIvG5f+u+nBxI8wHg9i29o9u9PGlg==", "person"=>{"firstname"=>"Seva", "lastname"=>""}, "commit"=>"Create Person"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "people" ("firstname", "lastname", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["firstname", "Seva"], ["lastname", ""], ["created_at", "2015-06-14 00:26:30.234375"], ["updated_at", "2015-06-14 00:26:30.234375"]]
+  [1m[35m (4.9ms)[0m  commit transaction
+Redirected to http://52.10.115.72:3000/people/new
+Completed 302 Found in 8ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:26:30 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/people" for 79.180.61.201 at 2015-06-13 20:27:11 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y92UsxOTZmtIrm8s0rOsFr3619DKHWp73EH8N/aIEZtvLUHnpY994pXUq417ZB67+U9h2OUTVNNeyYcs5vk4Cw==", "person"=>{"firstname"=>"notSEVAbutSImilar", "lastname"=>""}, "commit"=>"Create Person"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "people" ("firstname", "lastname", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["firstname", "notSEVAbutSImilar"], ["lastname", ""], ["created_at", "2015-06-14 00:27:11.784363"], ["updated_at", "2015-06-14 00:27:11.784363"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://52.10.115.72:3000/people/new
+Completed 302 Found in 6ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:27:12 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 20:27:19 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 20:27:19 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=a&commit=Search" for 79.180.61.201 at 2015-06-13 20:27:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"a", "commit"=>"Search"}
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE (firstname LIKE '%a%')
+  Rendered people/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=sev&commit=Search" for 79.180.61.201 at 2015-06-13 20:27:28 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sev", "commit"=>"Search"}
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" WHERE (firstname LIKE '%sev%')[0m
+  Rendered people/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started HEAD "/" for 54.159.114.10 at 2015-06-13 20:28:00 -0400
+Cannot render console from 54.159.114.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:31:00 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:31:01 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:31:01 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:31:01 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:31:01 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:31:01 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:31:01 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:31:01 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:32:33 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:32:33 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:32:33 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:33 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:34 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:34 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:34 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:34 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:32:36 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:32:36 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:32:37 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:37 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:37 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:37 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:37 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:32:37 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:33:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:33:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:33:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:33:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:33:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:33:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:33:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:33:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 20:38:41 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 20:38:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:38:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:38:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:38:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:38:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:38:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:38:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:38:50 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 20:38:53 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 20:45:40 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 20:46:13 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:46:13 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:46:14 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:14 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:14 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:14 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:14 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:14 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 20:46:35 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:46:36 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:46:36 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:36 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:36 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:36 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:36 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:36 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 20:46:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:46:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:46:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:46:49 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:47:06 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:47:07 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:47:07 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:47:07 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:47:07 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:47:07 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:47:07 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:47:07 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=a&commit=Search" for 79.180.61.201 at 2015-06-13 20:47:26 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"a", "commit"=>"Search"}
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE (firstname LIKE '%a%')
+  Rendered people/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=a&commit=Search" for 79.180.61.201 at 2015-06-13 20:49:21 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"a", "commit"=>"Search"}
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" WHERE (firstname LIKE '%a%')[0m
+  Rendered people/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:49:21 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:49:21 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:21 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:21 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=&commit=Search" for 79.180.61.201 at 2015-06-13 20:49:26 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendered people/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10: <hr>
+    11: 
+    12: <% if Person.present? %>
+    13: <% @people.each do |p| %>
+    14:   </br><%= p.firstname %> <%= p.lastname%>
+    15: <% end %>
+    16: <% else %>
+  app/views/people/index.html.erb:13:in `_app_views_people_index_html_erb___3811260959394615301_70109604327380'
+
+
+  Rendered /home/adif/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/adif/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/adif/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/adif/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.9ms)
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=&commit=Search" for 79.180.61.201 at 2015-06-13 20:49:43 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendered people/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:49:43 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:49:43 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:43 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:43 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:43 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:43 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:49:43 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=&commit=Search" for 79.180.61.201 at 2015-06-13 20:49:45 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendered people/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 20:50:47 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 20:50:47 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 20:50:47 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 20:50:47 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 20:50:47 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 20:50:47 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 20:50:47 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 20:50:47 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 79.180.61.201 at 2015-06-13 21:03:11 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 21:03:12 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 21:03:12 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 21:03:12 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 21:03:12 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 21:03:12 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 21:03:12 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 21:03:12 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/people/index" for 79.180.61.201 at 2015-06-13 21:03:21 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people/index" for 79.180.61.201 at 2015-06-13 21:09:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendered people/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 21:09:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 21:09:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:22 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:23 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/people/index?utf8=%E2%9C%93&search=a&commit=Search" for 79.180.61.201 at 2015-06-13 21:09:25 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"a", "commit"=>"Search"}
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE (firstname LIKE '%a%')
+  Rendered people/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/new" for 79.180.61.201 at 2015-06-13 21:09:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  Rendered people/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 79.180.61.201 at 2015-06-13 21:09:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 79.180.61.201 at 2015-06-13 21:09:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:38 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 79.180.61.201 at 2015-06-13 21:09:39 -0400
+Cannot render console from 79.180.61.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
